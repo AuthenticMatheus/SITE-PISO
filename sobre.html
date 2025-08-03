@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./media.css">
+    <link rel="icon" href="./IMG/icon.png" type="image/x-icon">
+</head>
+<body style="background-color: black;">
+
+
+    <nav class="navbar">
+        <div class="logo"><a href="./index.html"><img src="./IMG/logo.png" alt=""></a></div>
+        <ul class="nav-links">
+          <li><a href="https://youtube.com" class="nav-item">INICIO</a></li>
+          <li><a href="./sobre.html" class="nav-item">SOBRE</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfPhZtsT76pY976Cb4bmfqR8Bwk10s42_U6gQxnXweyy1cx0A/viewform" class="nav-item">SERVIÇOS</a></li>
+      <!--<li>
+        <a href="#" class="nav-item">PRODUTOS</a> 
+        <ul class="dropdown">
+          <li><a href="#">MOUSES</a></li>
+          <li><a href="#">MOUSEPADS</a></li>
+          <li><a href="#">FONES</a></li>
+        </ul>
+      </li> -->
+    </ul>
+  </nav>
+
+
+
+
+
+
+
+    <!-- Menu hamburger -->
+<div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+
+<!-- Menu lateral -->
+<nav class="side-menu" id="sideMenu">
+  <ul>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfPhZtsT76pY976Cb4bmfqR8Bwk10s42_U6gQxnXweyy1cx0A/viewform"> FORMULARIO DE PEDIDO </a></li>
+    <li><a href="./sobre.html"> SOBRE NÓS</a></li>
+    <li><a href=".">PRODUTOS</a> </li>
+    <li><a href="https://linktr.ee/Divisiononline?fbclid=PAQ0xDSwL48EFleHRuA2FlbQIxMQABp1pqP3Nz4vebrlrp7Q9t61BvCEWKTQ3cHY3WuI7vPWKS4SAqDIJ5R9TALc6c_aem_bEDHP4JfvXS9whfwnqoyAA"> CONTATO</a></li>
+  </ul>
+</nav>
+<script>
+  const menu = document.getElementById("sideMenu");
+  const toggle = document.querySelector(".menu-toggle");
+
+  // Abre/fecha ao clicar no ícone
+  toggle.addEventListener("click", function (e) {
+    e.stopPropagation(); // Impede que o clique feche o menu imediatamente
+    if (menu.style.left === "0px") {
+      menu.style.left = "-250px";
+    } else {
+      menu.style.left = "0px";
+    }
+  });
+
+  // Fecha ao clicar fora do menu e do ícone
+  document.addEventListener("click", function (e) {
+    if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+      menu.style.left = "-250px";
+    }
+  });
+</script>
+    
+    <div class="sobre">
+    <h1> SOBRE A DIVISION</h1>
+    <img src="./IMG/logosemfundo.png" alt=""> </img>
+    <p>Eu e meu irmão trabalhamos juntos com assistência técnica e venda de produtos de informática.
+    <br> A gente preza por um atendimento direto, rápido e sem enrolação, sempre buscando entregar soluções que funcionam de verdade. 
+    <br> Tudo com aquele cuidado que a gente gostaria de receber também.</p></div>
+
+<main>
+  <div class="trampo">
+    <h1>UM POUCO DO TRAMPO...</h1>
+  <img src="./IMG/cartao.jpeg" alt="">
+  <p> Arte de cartão de visitas feito por nós!</p>
+  <img src="./IMG/1.jpg" alt="">
+  <p>Troca de sistema operacional,<br> de Windows pra Linux</p>
+  <img src="./IMG/2.jpg" alt="">
+  <p>Conserto do Xbox 360</p>
+  <img src="./IMG/3.jpg" alt="">
+  <p> Formatação e instalação do Windows 7</p>
+  <img src="./IMG/4.jpg" alt="">
+  <p> Formatação de Notebook</p>
+  <img src="./IMG/5.jpeg" alt="">
+  <p>Troca de Tela</p>
+</div>
+ 
+<h2> Precisando só me chamar!</h2>
+
+
+
+</main>
+
+
+    <footer>
+
+
+        <div class="seta">
+          <a href="sobre.html"><img src="./IMG/seta.png" alt=""></a>
+          <p> DE VOLTA AO TOPO </p>
+          </div>
+          
+      
+      
+      
+      <div class="Whats">
+          <a href="https://wa.me/5519978193361?text=Ol%C3%A1%2C%20vim%20pelo%20site%21" target="_blank">
+          <img src="https://static.vecteezy.com/system/resources/previews/016/716/468/original/whatsapp-icon-free-png.png" width="60" alt="Fale conosco pelo Whatsapp" title="Fale conosco pelo Whatsapp"> 
+       </a> 
+      </div>
+      
+      
+      
+      <div class="social">
+        <a href="https://www.instagram.com/division.group"><img src="./IMG/insta.svg.svg" alt=""></a>
+        <a href="https://www.facebook.com/profile.php?id=61555749826105"><img src="./IMG/face.svg.svg" alt=""></a>
+        
+      
+      </div>
+      
+      &copy; 2025 - Todos os direitos reservados.
+      
+      </footer>
+    
+</body>
+
+
+</html>

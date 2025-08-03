@@ -1,13 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division</title>
+    <link rel="icon" href="./IMG/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./media.css">
+    <script src="card.js"> </script>
+    <script src="card.json"> </script>
+    <script src="./JS/welcome.js"> </script>
+    <script src="./drop.js"></script>
 </head>
 <body>
+  <nav class="navbar">
+    <div class="logo"><a href="./index.html"><img src="./IMG/logo.png" alt=""></a></div>
+    <ul class="nav-links">
+      <li><a href="./index.html" class="nav-item">INICIO</a></li>
+      <li><a href="./sobre.html" class="nav-item">SOBRE</a></li>
+      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfPhZtsT76pY976Cb4bmfqR8Bwk10s42_U6gQxnXweyy1cx0A/viewform" class="nav-item">SERVIÇOS</a></li>
+      <!--<li>
+        <a href="#" class="nav-item">PRODUTOS</a> 
+        <ul class="dropdown">
+          <li><a href="#">MOUSES</a></li>
+          <li><a href="#">MOUSEPADS</a></li>
+          <li><a href="#">FONES</a></li>
+        </ul>
+      </li> -->
+    </ul>
+  </nav>
   
+
+<!-- Menu hamburger -->
+<div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+
+<!-- Menu lateral -->
+<nav class="side-menu" id="sideMenu">
+  <ul>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfPhZtsT76pY976Cb4bmfqR8Bwk10s42_U6gQxnXweyy1cx0A/viewform"> FORMULARIO DE PEDIDO </a></li>
+    <li><a href="./sobre.html"> SOBRE NÓS</a></li>
+    <li><a href="./index.html">PRODUTOS</a> </li>
+    <li><a href="https://linktr.ee/Divisiononline?fbclid=PAQ0xDSwL48EFleHRuA2FlbQIxMQABp1pqP3Nz4vebrlrp7Q9t61BvCEWKTQ3cHY3WuI7vPWKS4SAqDIJ5R9TALc6c_aem_bEDHP4JfvXS9whfwnqoyAA">CONTATO</a></li>
+  </ul>
+</nav>
+<script>
+  const menu = document.getElementById("sideMenu");
+  const toggle = document.querySelector(".menu-toggle");
+
+  // Abre/fecha ao clicar no ícone
+  toggle.addEventListener("click", function (e) {
+    e.stopPropagation(); // Impede que o clique feche o menu imediatamente
+    if (menu.style.left === "0px") {
+      menu.style.left = "-250px";
+    } else {
+      menu.style.left = "0px";
+    }
+  });
+
+  // Fecha ao clicar fora do menu e do ícone
+  document.addEventListener("click", function (e) {
+    if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+      menu.style.left = "-250px";
+    }
+  });
+</script>
+
+
+
+      
+<div class="slider"> 
+   <figure>
+    <div class="slide">
+        <img src="./IMG/Slide1.jpg" alt="">
+    </div>
+    <div class="slide">
+        <img src="./IMG/Slide2.jpg" alt="">
+    </div>
+    <div class="slide">
+        <img src="./IMG/Slide3.png" alt="">
+    </div>
+   </figure>
+    </div>
+
+
+    <div class="slider2"> 
+      <figure>
+       <div class="slide">
+           <img src="./IMG/Minislide1.jpg" alt="">
+       </div>
+       <div class="slide">
+           <img src="./IMG/Minislide2.jpg" alt="">
+       </div>
+       <div class="slide">
+           <img src="./IMG/Minislide3.jpg" alt="">
+       </div>
+      </figure>
+       </div>
+
+
+
+
+   <main>
+    <div class="h1h1"> <h1>CONHEÇA OS PRODUTOS</h1></div>
+   
+        <div class="cards-container" id="cards-container" > 
+           
+        </div> 
+      
+
+     <div class="h1">
+      <h1>EM BREVE MAIORES ATUALIZAÇÕES...</h1>
+     </div>
+
+
+   </main>
+   
+<!--
+   <section class="posts">
+    <div class="posts-grid">
+      <div class="post-item">
+        <img src="./IMG/paisa.jpg" alt="Post 1">
+        <img src="./IMG/paisa.jpg" alt="Post 1">
+        <img src="./IMG/paisa.jpg" alt="Post 1">
+        <img src="./IMG/paisa.jpg" alt="Post 1">
+      </div>
+      <div class="post-item">
+        <img src="./IMG/paisa.jpg" alt="Post 1">
+        <img src="./IMG/paisa.jpg" alt="Post 1">
+        <img src="./IMG/paisa.jpg" alt="Post 1">
+        <img src="./IMG/paisa.jpg" alt="Post 1">
+      </div>
+     
+       -->
+
+
+
+
+
+
+<footer>
+
+
+  <div class="seta">
+    <a href="index.html"><img src="./IMG/seta.png" alt=""></a>
+    <p> DE VOLTA AO TOPO </p>
+    </div>
+    
+
+
+
+<div class="Whats">
+    <a href="https://wa.me/5519978193361?text=Ol%C3%A1%2C%20vim%20pelo%20site%21" target="_blank">
+    <img src="https://static.vecteezy.com/system/resources/previews/016/716/468/original/whatsapp-icon-free-png.png" width="60" alt="Fale conosco pelo Whatsapp" title="Fale conosco pelo Whatsapp"> 
+ </a> 
+</div>
+
+
+
+<div class="social">
+<a href="https://www.instagram.com/division.group"><img src="./IMG/insta.svg.svg" alt=""></a>
+<a href="https://www.facebook.com/profile.php?id=61555749826105"><img src="./IMG/face.svg.svg" alt=""></a>
+
+</div>
+
+&copy; 2025 - Todos os direitos reservados.
+
+</footer>
+
 </body>
 </html>
-
-

@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ 
+  }
+ 
+  
+  
+
+  .welcome-message {
+    position: fixed;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1000px;
+    padding: 15px 20px;
+    background-color: black;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid red;
+    border-radius: 0 0 10px 10px;
+  }
+  
+
+
+
+
+
+body {
+    background-color:white;
+    font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  background-color: black;
+  height: 100px;
+}
+
+.logo img {
+  height: 50%;
+  width: 60%;
+  margin-top: 5px;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  font-family: "Anton", sans-serif;
+  font-size: 24px;
+  transition: color 0.5s ease,
+}
+
+.nav-links a:hover {
+ color: orangered;
+ 
+}
+
+.nav-links li {
+ margin-left: 20px;
+} 
+
+.nav-links a{
+color: white;
+text-decoration: none;
+font-size: 1em;
+transition: color 0.5s ease;
+}
+
+    
+ .nav-item {
+  padding: 10px;
+}
+
+.nav-item:hover {
+background-color: white (126, 123, 123);
+border-radius: 8px;
+transition: color 1s ease,
+background color 1s ease;
+}
+
+.navbar {
+  background-color: black;
+  padding: 10px 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links > li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links li:hover {
+  background-color: #ccc;
+  border-radius: 8px;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  z-index: 9999;
+}
+
+.dropdown li {
+  width: 130px;
+  margin: 0;
+}
+
+.dropdown li a {
+  padding: 10px;
+  color: white;
+  display: block;
+}
+
+.nav-links li:hover .dropdown {
+  display: block;
+}
+
+
+.slider {
+  width: 100%;
+  height:500px;
+  overflow: hidden;
+}
+
+figure{
+  position: relative;
+  left: 0;
+  width: 400%;
+  animation: 10s slide infinite ;
+}
+
+.slide{
+  position:relative;
+  width: 25%;
+  float: left;
+}
+
+.slide h1{
+  position: absolute;
+  font-size: 3em;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.slide img {
+  width: 100%;
+  height: 500px;
+}
+
+
+  @keyframes slide {
+    0%, 10% {
+      left: 0;
+    }
+    20%, 30% {
+      left: -100%;
+    }
+    40%, 50% {
+      left: -200%;
+    }
+    60%, 70% {
+      left: -100%;
+    }
+    80%, 90% {
+      left: 0;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  
+
+
+
+
+
+.slider2{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main h1 {
+  color: white;
+  text-align: center;
+  height: 50px;
+  justify-content: center;
+}
+
+.h1h1 h1{
+  background-color: black;
+  font-family: "Anton";
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* <- AGORA ALINHA À ESQUERDA */
+  gap: 20px;
+  padding: 10px;;
+  margin-left: 150px;
+}
+
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  min-height: 420px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 20px;
+  color: #444;
+  margin: 5px;
+}
+
+.card a {
+  margin-top: auto;
+  background: green;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+
+
+
+.card:hover {
+  transform: translateY(-8px); /* faz o card subir um pouco */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* sombra mais intensa */
+}
+
+
+
+
+
+.Whats { position: fixed; bottom: 10px; right: 6px; z-index: 9999; }
+    .Whats:hover {transform: scale(1.2); transition: 0.3s; }
+
+
+
+
+    /* Esconde o menu toggle no desktop */
+.menu-toggle {
+  display: none;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 220px;
+  height: 100%;
+  background-color: black;
+  color: white;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  padding: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.side-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+ footer {
+  color: white;
+  text-align: center;
+  bottom: 0;
+  background-color: black;
+  height: 100%;
+  text-align:center;
+  gap: 20px;
+  padding: 50px;
+   
+  }
+
+  .social img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    gap: 100px;
+  
+  }
+
+  .social img:hover {
+    transform: scale(1.2); transition: 0.3s;
+  }
+ 
+  
+
+
+  .posts{
+
+    text-align: center;
+  }
+  
+  .posts-grid {
+    display: grid;
+    gap: 10px;
+    
+  }
+  
+  .post-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+
+  }
+  
+  .post-item img {
+    justify-content: center;
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    margin: 1px;
+    
+  }
+
+  .seta img {
+    height: 90px;
+    width: 90px;
+    margin-bottom: 10px;
+  }
+
+  .seta p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: "Anton", sans-serif;
+  }
+  
+ /*SOBREEEEEEEEEEEEEEEE*/
+
+ .sobre h1{
+  text-align: center;
+  font-family: "Anton";
+  color: orangered;
+  padding: 20px;
+ }
+ .sobre p{
+  text-align: center;
+  margin: 20px;
+  color: white;
+ }
+
+ .sobre {
+  background-color: black;
+  height: 400px;
+ }
+ .sobre img {
+  height: 200px;
+  width: 200px;
+  margin-left: 720px;
+ }
+
+.trampo img {
+  display: inline-block;
+  flex-wrap: wrap;
+  height: 400px;
+  width: 400px;
+  margin-left: 100px;
+  padding: 10px;
+  border-radius: 20px;
+ 
+}
+
+.trampo {
+  background-color: black;
+  z-index: 999;
+}
+.trampo h1 {
+  font-family: "Anton";
+  color: orangered;
+  background-color: black;
+ 
+
+}
+
+.trampo p {
+  color: white;
+  font-size: 12px;
+  display: none;
+}
+
+
+.h1 h1{
+  font-family: "Anton";
+  gap: 20px;
+  margin: 20px;
+  color: orangered;
+  
+}
+
+main h2 {
+  text-align: center;
+  font-family: "Anton";
+  color: orangered;
+  background-color: black;
+  margin-top: 100px;
+}

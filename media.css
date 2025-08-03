@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@media only screen and (max-width: 600px) {
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: 12px;
+      font-size: 30px;
+      color: white;
+      border-radius: 8px;
+      z-index: 1001;
+    }
+    
+  .side-menu{
+   margin-left: 0px;
+   height: 100%;
+   margin-top: 0px;
+   font-size: 1.5em;
+   font-family: "Anton", sans-serif;
+  }
+
+
+
+.logo {
+  text-align: center;
+}
+
+
+.nav-links {
+  display: none;
+}
+
+.navbar {
+  position: relative; /* Necessário para que o absolute funcione */
+ 
+}
+
+
+
+
+.slider {
+ display: none;
+}
+
+
+.slider2{
+  width: 100%;
+  height:400px;
+  overflow: hidden;
+  overflow: hidden;
+  display: block;
+}
+
+
+
+
+
+
+.novidades h1{
+font-size: 26px;
+padding: 10px;
+font-family: "Anton", sans-serif;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* espaçamento entre cards */
+  padding:10px;
+  margin: 0;
+}
+
+
+
+main h1{
+  font-size: 27px;
+  font-family: "Anton";
+ 
+}
+
+
+
+
+
+
+
+
+/* SOBREEEEEEEEEEEE */
+
+.sobre {
+  height: 400px;
+}
+
+.sobre img{
+  height: 100px;
+  width: 100px;
+  margin-left: 140px;
+}
+
+
+.trampo img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 50px;
+  width: 300px;
+  height: 300px;
+
+}
+
+
+.trampo p {
+  text-align: center;
+  margin: 00px;
+  color: white;
+  font-size: 18px;
+  padding: 1px;
+  margin-top: 1px;
+  justify-content: baseline;
+  display: block;
+}
+
+.h1 h1{
+  font-family: "Anton";
+  gap: 20px;
+  margin: 40px;
+  color: orangered;
+  
+}
+
+
+
+.trampo {
+  background-color: black;
+}
+
+.trampo h1 {
+  margin-left: 20px;
+}
+
+
+
+}
